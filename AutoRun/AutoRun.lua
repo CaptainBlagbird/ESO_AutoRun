@@ -77,6 +77,8 @@ end
 
 -- Event handler function for EVENT_PLAYER_ACTIVATED
 local function OnPlayerActivated(eventCode)
+	EVENT_MANAGER:UnregisterForEvent(AddOnName, EVENT_PLAYER_ACTIVATED)
+	
 	-- Set up SavedVariables table
 	sv = ZO_SavedVars:New("AutoRun_SavedVars", 1, nil, {Commands={}})
 	
@@ -100,7 +102,5 @@ local function OnPlayerActivated(eventCode)
 			DoCommand(cmd)
 		end
 	end
-	
-	EVENT_MANAGER:UnregisterForEvent(AddOnName, EVENT_PLAYER_ACTIVATED)
 end
 EVENT_MANAGER:RegisterForEvent(AddOnName, EVENT_PLAYER_ACTIVATED, OnPlayerActivated)
