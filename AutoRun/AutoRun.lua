@@ -9,7 +9,7 @@ https://github.com/CaptainBlagbird
 -- Addon info
 local AddOnName = "AutoRun"
 -- Saved variables table
-local sv
+local sv = {}
 -- Settings
 local panelData = {
     type = "panel",
