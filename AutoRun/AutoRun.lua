@@ -84,7 +84,7 @@ local function OnPlayerActivated(eventCode)
     
     -- Set up settings menu
     if LibStub then
-        local LAM = LibStub("LibAddonMenu-2.0")
+        local LAM = LibStub("LibAddonMenu-2.0", false)
         LAM:RegisterAddonPanel(AddOnName.."_Options", panelData)
         LAM:RegisterOptionControls(AddOnName.."_Options", optionsTable)
     end
