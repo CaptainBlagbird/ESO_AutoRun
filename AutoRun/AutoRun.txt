@@ -1,7 +1,7 @@
 ## Title: Auto Run |c555555v1.0|r
 ## Version: 1.0
 ## Author: |c70C0DECaptainBlagbird|r
-## APIVersion: 100025
+## APIVersion: 100026
 ## Description: Automatically runs all specified commands on startup
 ## SavedVariables: AutoRun_SavedVars
 ## DependsOn: LibStub LibAddonMenu-2.0
